@@ -1,0 +1,9 @@
+GET http://localhost:8761/students?id=1&name=Dan&url=link.com
+###
+PUT http://localhost:8761/students?id=1&name=Dan&url=links.com.ua
+###
+GET http://localhost:8761/students
+###
+GET http://localhost:8761/students&id=1
+###
+DELETE http://localhost:8761/students&id=1

@@ -1,0 +1,38 @@
+DELETE http://localhost:8761/students&id=1
+
+<> 2020-04-27T095158.404.json
+
+###
+
+GET http://localhost:8761/students&id=1
+
+<> 2020-04-27T095057.404.json
+
+###
+
+GET http://localhost:8761/students
+
+<> 2020-04-27T094920.404.json
+
+###
+
+PUT http://localhost:8761/students?id=1&name=Dan&url=links.com.ua
+
+<> 2020-04-27T094822.404.json
+
+###
+
+GET http://localhost:8761/students?id=1&name=Dan&url=link.com
+
+<> 2020-04-27T094716.404.json
+
+###
+
+GET http://localhost:8081/students?id=1&name=Dan&url=link.com
+
+###
+
+GET http://localhost:8081/students?id=1&name=Dan&url=link.com
+
+###
+

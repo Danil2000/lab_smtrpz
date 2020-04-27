@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25200323-581d-46e0-b6ba-94fe3d13a142" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lab1@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lab1@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lab1@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="new_schema: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="new_schema: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b7hhxJzloT3WanwN5pc5byDoS8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8761/students&amp;id=1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8761/students&amp;id=1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8761/students" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8761/students" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="Dan" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="url" />
+                <option name="value" value="links.com.ua" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8761/students" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="Dan" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="url" />
+                <option name="value" value="link.com" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.test#5">
+    <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ServiceRegistrationAndDiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gs-service-registration-and-discovery.eureka-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.serviceregistrationanddiscoveryservice.ServiceRegistrationAndDiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.test#5" />
+        <item itemvalue="HTTP Request.test#4" />
+        <item itemvalue="HTTP Request.test#3" />
+        <item itemvalue="HTTP Request.test#2" />
+        <item itemvalue="HTTP Request.test#1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25200323-581d-46e0-b6ba-94fe3d13a142" name="Default Changelist" comment="" />
+      <created>1587989161430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587989161430</updated>
+      <workItem from="1587989165323" duration="6995000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="522" y="293" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587994469466">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state x="522" y="293" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1340@0.23.2560.1340" timestamp="1587994469466" />
+    <state width="1709" height="339" key="GridCell.Tab.0.bottom" timestamp="1588013518204">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.0.bottom/0.23.2560.1340@0.23.2560.1340" timestamp="1588013518204" />
+    <state width="1709" height="339" key="GridCell.Tab.0.center" timestamp="1588013518204">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.0.center/0.23.2560.1340@0.23.2560.1340" timestamp="1588013518204" />
+    <state width="1709" height="339" key="GridCell.Tab.0.left" timestamp="1588013518203">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.0.left/0.23.2560.1340@0.23.2560.1340" timestamp="1588013518203" />
+    <state width="1709" height="339" key="GridCell.Tab.0.right" timestamp="1588013518204">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.0.right/0.23.2560.1340@0.23.2560.1340" timestamp="1588013518204" />
+    <state width="1709" height="339" key="GridCell.Tab.1.bottom" timestamp="1588013168678">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.1.bottom/0.23.2560.1340@0.23.2560.1340" timestamp="1588013168678" />
+    <state width="1709" height="339" key="GridCell.Tab.1.center" timestamp="1588013168677">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.1.center/0.23.2560.1340@0.23.2560.1340" timestamp="1588013168677" />
+    <state width="1709" height="339" key="GridCell.Tab.1.left" timestamp="1588013168677">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.1.left/0.23.2560.1340@0.23.2560.1340" timestamp="1588013168677" />
+    <state width="1709" height="339" key="GridCell.Tab.1.right" timestamp="1588013168677">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="1709" height="339" key="GridCell.Tab.1.right/0.23.2560.1340@0.23.2560.1340" timestamp="1588013168677" />
+    <state x="810" y="529" width="350" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1587990355388">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state x="810" y="529" width="350" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.2560.1340@0.23.2560.1340" timestamp="1587990355388" />
+    <state x="689" y="462" width="467" height="326" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1587994705368">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state x="689" y="462" width="467" height="326" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.2560.1340@0.23.2560.1340" timestamp="1587994705368" />
+    <state x="659" y="299" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587994687552">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state x="659" y="299" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.2560.1340@0.23.2560.1340" timestamp="1587994687552" />
+    <state x="786" y="420" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1587994520340">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state x="786" y="420" key="com.intellij.database.view.ui.DbObjectDialog/0.23.2560.1340@0.23.2560.1340" timestamp="1587994520340" />
+  </component>
+</project>
