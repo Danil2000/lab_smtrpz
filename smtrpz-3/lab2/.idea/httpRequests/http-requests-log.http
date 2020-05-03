@@ -1,0 +1,66 @@
+GET http://localhost:8081
+
+<> 2020-05-03T105518.200.txt
+
+###
+
+GET http://localhost:8080/students
+
+<> 2020-05-03T105121.200.txt
+
+###
+
+DELETE http://localhost:8080/students?id=1
+
+<> 2020-05-03T105109.200.json
+
+###
+
+DELETE http://localhost:8080/entity?id=1
+
+<> 2020-05-03T105056.404.json
+
+###
+
+GET http://localhost:8080/students?id=1
+
+<> 2020-05-03T105045.200.txt
+
+###
+
+GET http://localhost:8080/strudents?id=1
+
+<> 2020-05-03T105035.404.json
+
+###
+
+GET http://localhost:8080/students
+
+<> 2020-05-03T105027.200.txt
+
+###
+
+PUT http://localhost:8080/students?id=1&name=Serg&email=dan000@gmail.com
+
+<> 2020-05-03T105021.200.json
+
+###
+
+PUT http://localhost:8080/users?id=1&name=Serg&email=dan000@gmail.com
+
+<> 2020-05-03T105004.404.json
+
+###
+
+GET http://localhost:8080/students
+
+<> 2020-05-03T104947.200.txt
+
+###
+
+POST http://localhost:8080/students?id=1&name=Dan&email=noisyboy20000@gmail.com
+
+<> 2020-05-03T104942.200.json
+
+###
+
