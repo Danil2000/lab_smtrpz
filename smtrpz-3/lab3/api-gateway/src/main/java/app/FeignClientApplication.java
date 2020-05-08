@@ -1,22 +1,16 @@
 package app;
 
-import app.User.UserClient;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import app.Student.StudentClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @SpringBootApplication
@@ -26,7 +20,7 @@ import java.util.Map;
 @RefreshScope
 public class FeignClientApplication {
     @Autowired
-    UserClient userClient;
+    StudentClient studentClient;
 
     public static void main(String[] args) {
         SpringApplication.run(FeignClientApplication.class, args);
@@ -39,55 +33,49 @@ public class FeignClientApplication {
     public @ResponseBody
     Map<String, String> getConfig() {
         HashMap<String, String> configmap = new HashMap<String, String>();
-        configmap.put("firstprop", configClientAppConfiguration.getFirstprop());
-        configmap.put("secondprop", configClientAppConfiguration.getSecondprop());
-        configmap.put("thirdprop", configClientAppConfiguration.getThirdprop());
-        configmap.put("fourhprop", configClientAppConfiguration.getFourthprop());
-        configmap.putAll(userClient.getConfig());
+        configmap.put("test1", configClientAppConfiguration.getFirsttest());
+        configmap.put("test2", configClientAppConfiguration.getSecondtest());
+        configmap.put("test3", configClientAppConfiguration.getThirdtest());
+        configmap.put("test4", configClientAppConfiguration.getFourthtest());
+        configmap.putAll(studentClient.getConfig());
         return configmap;
     }
 
     @GetMapping("/")
     public String getInstanceId() {
-        return userClient.getInstanceId();
+        return studentClient.getInstanceId();
     }
 
     // read
-    @GetMapping("/users")
+    @GetMapping("/students")
     public String getUserById(@RequestParam(value = "id", required = false) Integer id) {
-        System.out.println("Response from service: " + userClient.getInstanceId());
-        return userClient.getUserById(id);
+        System.out.println("Response from service: " + studentClient.getInstanceId());
+        return studentClient.getUserById(id);
     }
 
     // create
-    @PostMapping("/users")
-    public ResponseEntity<String> addUser(@RequestBody
+    @PostMapping("/students")
+    public ResponseEntity<String> addStudent(@RequestBody
                            @RequestParam(value = "id", required = true) Integer id,
                                           @RequestParam(value = "name", required = true) String name,
-                                          @RequestParam(value = "surname", required = true) String surname,
-                                          @RequestParam(value = "email", required = true) String email,
-                                          @RequestParam(value = "gender", required = true) String gender,
-                                          @RequestParam(value = "country", required = true) String country) {
-        return userClient.addUser(id, name, surname, email, gender, country);
+                                          @RequestParam(value = "email", required = true) String email) {
+        return studentClient.addStudent(id, name, email);
     }
 
     // update
-    @PutMapping("/users")
-    public ResponseEntity<String> updateUser(@RequestBody
+    @PutMapping("/students")
+    public ResponseEntity<String> updateStudent(@RequestBody
                               @RequestParam(value = "id", required = true) Integer id,
                               @RequestParam(value = "name", required = true) String name,
-                              @RequestParam(value = "surname", required = true) String surname,
-                              @RequestParam(value = "email", required = true) String email,
-                              @RequestParam(value = "gender", required = true) String gender,
-                              @RequestParam(value = "country", required = true) String country) {
-        return userClient.updateUser(id, name, surname, email, gender, country);
+                              @RequestParam(value = "email", required = true) String email) {
+        return studentClient.updateStudent(id, name, email);
     }
 
     // delete
-    @DeleteMapping("/users")
-    public ResponseEntity<String> deleteUser(@RequestBody
+    @DeleteMapping("/students")
+    public ResponseEntity<String> deleteStudent(@RequestBody
                               @RequestParam(value = "id", required = true) Integer id) {
-        return userClient.deleteUser(id);
+        return studentClient.deleteStudent(id);
     }
 
 }

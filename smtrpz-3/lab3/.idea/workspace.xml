@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f895eaa8-7e1f-42cf-bd4c-0cdb2df3c29b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/app/ConfigClientAppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/app/ConfigClientAppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/app/FeignClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/app/FeignClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/app/User/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/app/Student/StudentClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/app/ConfigClientAppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/app/ConfigClientAppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/app/FeignClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/app/FeignClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/app/User/UserClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/app/ConfigServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/app/ConfigServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/app/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/app/Student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/app/User/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/app/Student/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/app/User/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/app/Student/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/classes/app/EurekaСlientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/target/classes/app/EurekaСlientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/eureka-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/test.http" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1basTI2abAwo61mnawhX6LLnncM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8888/api-gateway/default" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EurekaСlientApplication">
+    <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaСlientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.EurekaСlientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeignClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.FeignClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegistrationAndDiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.ServiceRegistrationAndDiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.test#5" />
+        <item itemvalue="HTTP Request.test#4" />
+        <item itemvalue="HTTP Request.test#2" />
+        <item itemvalue="HTTP Request.test#1" />
+        <item itemvalue="Spring Boot.FeignClientApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f895eaa8-7e1f-42cf-bd4c-0cdb2df3c29b" name="Default Changelist" comment="" />
+      <created>1588881544573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588881544573</updated>
+      <workItem from="1588881545966" duration="5302000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1090" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588883664874">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state x="1090" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1333@0.23.2560.1333" timestamp="1588883664874" />
+    <state x="1090" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1335@0.23.2560.1335" timestamp="1588881905359" />
+    <state width="1678" height="271" key="GridCell.Tab.0.bottom" timestamp="1588888620169">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.0.bottom/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620169" />
+    <state width="1678" height="271" key="GridCell.Tab.0.center" timestamp="1588888620169">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.0.center/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620169" />
+    <state width="1678" height="271" key="GridCell.Tab.0.left" timestamp="1588888620168">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.0.left/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620168" />
+    <state width="1678" height="271" key="GridCell.Tab.0.right" timestamp="1588888620169">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.0.right/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620169" />
+    <state width="1678" height="271" key="GridCell.Tab.1.bottom" timestamp="1588888620170">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.1.bottom/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620170" />
+    <state width="1678" height="271" key="GridCell.Tab.1.center" timestamp="1588888620170">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.1.center/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620170" />
+    <state width="1678" height="271" key="GridCell.Tab.1.left" timestamp="1588888620169">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.1.left/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620169" />
+    <state width="1678" height="271" key="GridCell.Tab.1.right" timestamp="1588888620170">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1678" height="271" key="GridCell.Tab.1.right/0.23.2560.1333@0.23.2560.1333" timestamp="1588888620170" />
+  </component>
+</project>

@@ -1,0 +1,28 @@
+POST http://localhost:8081/actuator/refresh
+
+###
+
+GET http://localhost:8080/config
+
+###
+
+GET http://localhost:8081/config
+
+###
+
+GET http://localhost:8888/api-gateway/default
+
+<> 2020-05-07T114607.500.json
+
+###
+
+GET http://localhost:8080/config
+
+###
+
+GET http://localhost:8888/api-gateway/default
+
+<> 2020-05-07T114525.500.json
+
+###
+

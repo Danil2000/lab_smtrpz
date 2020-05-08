@@ -9,41 +9,43 @@ public class ConfigClientAppConfiguration {
     public ConfigClientAppConfiguration() {
     }
 
-    public String getFirstprop() {
-        return firstprop;
-    }
-    public void setFirstprop(String firstprop) {
-        this.firstprop = firstprop;
-    }
-    private String firstprop;
-
-    public String getSecondprop() {
-        return secondprop;
+    public String getFirsttest() {
+        return firsttest;
     }
 
-    public void setSecondprop(String secondprop) {
-        this.secondprop = secondprop;
+    public void setFirsttest(String firsttest) {
+        this.firsttest = firsttest;
     }
 
-    private String secondprop;
+    private String firsttest;
 
-    public String getThirdprop() {
-        return thirdprop;
+    public String getSecondtest() {
+        return secondtest;
     }
 
-    public void setThirdprop(String thirdprop) {
-        this.thirdprop = thirdprop;
+    public void setSecondtest(String secondtest) {
+        this.secondtest = secondtest;
     }
 
-    private String thirdprop;
+    private String secondtest;
 
-    public String getFourthprop() {
-        return fourthprop;
+    public String getThirdtest() {
+        return thirdtest;
     }
 
-    public void setFourthprop(String fourthprop) {
-        this.fourthprop = fourthprop;
+    public void setThirdtest(String thirdtest) {
+        this.thirdtest = thirdtest;
     }
 
-    private String fourthprop;
+    private String thirdtest;
+
+    public String getFourthtest() {
+        return fourthtest;
+    }
+
+    public void setFourthtest(String fourthtest) {
+        this.fourthtest = fourthtest;
+    }
+
+    private String fourthtest;
 }
