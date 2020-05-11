@@ -1,6 +1,6 @@
 package app;
 
-import app.User.UserClient;
+import app.Student.StudentClient;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,21 +15,21 @@ public class ProxyService {
     private static final String BACKEND_A = "eureka-client";
 
     @Autowired
-    private UserClient userClient;
+    private StudentClient studentClient;
 
     @ResponseBody
     Map<String, String> getConfig() {
-        return userClient.getConfig();
+        return studentClient.getConfig();
     }
 
     String getInstanceId() {
-        return userClient.getInstanceId();
+        return studentClient.getInstanceId();
     }
 
     // read
     @CircuitBreaker(name = BACKEND_A, fallbackMethod = "fallback")
-    String getUserById(@RequestParam(value = "id", required = false) Integer id) {
-        return userClient.getUserById(id);
+    String getStudentById(@RequestParam(value = "id", required = false) Integer id) {
+        return studentClient.getStudentById(id);
     }
 
     public String fallback(Throwable e) {
@@ -38,31 +38,25 @@ public class ProxyService {
 
     // create
     @Retry(name = BACKEND_A)
-    public ResponseEntity<String> addUser(@RequestBody
+    public ResponseEntity<String> addStudent(@RequestBody
                                           @RequestParam(value = "id", required = true) Integer id,
                                           @RequestParam(value = "name", required = true) String name,
-                                          @RequestParam(value = "surname", required = true) String surname,
-                                          @RequestParam(value = "email", required = true) String email,
-                                          @RequestParam(value = "gender", required = true) String gender,
-                                          @RequestParam(value = "country", required = true) String country) {
-        return userClient.addUser(id,name,surname,email,gender,country);
+                                          @RequestParam(value = "email", required = true) String email) {
+        return studentClient.addStudent(id,name,email);
     }
 
     // update
     @Retry(name = BACKEND_A)
-    public ResponseEntity<String> updateUser(@RequestBody
+    public ResponseEntity<String> updateStudent(@RequestBody
                                              @RequestParam(value = "id", required = true) Integer id,
                                              @RequestParam(value = "name", required = true) String name,
-                                             @RequestParam(value = "surname", required = true) String surname,
-                                             @RequestParam(value = "email", required = true) String email,
-                                             @RequestParam(value = "gender", required = true) String gender,
-                                             @RequestParam(value = "country", required = true) String country) {
-        return userClient.updateUser(id,name,surname,email,gender,country);
+                                             @RequestParam(value = "email", required = true) String email) {
+        return studentClient.updateStudent(id,name, email);
     }
 
     // delete
-    public ResponseEntity<String> deleteUser(@RequestBody
+    public ResponseEntity<String> deleteStudent(@RequestBody
                                              @RequestParam(value = "id", required = true) Integer id) {
-        return userClient.deleteUser(id);
+        return studentClient.deleteStudent(id);
     }
 }

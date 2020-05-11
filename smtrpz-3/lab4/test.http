@@ -15,3 +15,9 @@ POST http://localhost:8081/actuator/refresh
 
 ### Bus refresh
 POST http://localhost:8081/actuator/bus-refresh
+
+###
+
+GET http://localhost:8080/users
+
+###

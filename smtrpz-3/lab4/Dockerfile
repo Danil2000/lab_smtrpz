@@ -181,7 +181,7 @@ RUN set -eux; \
 	erl -noshell -eval 'io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'
 
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Create rabbitmq system user & group, fix permissions & allow root user to connect to the RabbitMQ Erlang VM
+# Create rabbitmq system student & group, fix permissions & allow root student to connect to the RabbitMQ Erlang VM
 RUN set -eux; \
 	groupadd --gid 999 --system rabbitmq; \
 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; \
@@ -240,7 +240,7 @@ RUN set -eux; \
 	\
 # verify assumption of no stale cookies
 	[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; \
-# Ensure RabbitMQ was installed correctly by running a few commands that do not depend on a running server, as the rabbitmq user
+# Ensure RabbitMQ was installed correctly by running a few commands that do not depend on a running server, as the rabbitmq student
 # If they all succeed, it's safe to assume that things have been set up correctly
 	gosu rabbitmq rabbitmqctl help; \
 	gosu rabbitmq rabbitmqctl list_ciphers; \
@@ -251,7 +251,7 @@ RUN set -eux; \
 # Added for backwards compatibility - users can simply COPY custom plugins to /plugins
 RUN ln -sf /opt/rabbitmq/plugins /plugins
 
-# set home so that any `--user` knows where to put the erlang cookie
+# set home so that any `--student` knows where to put the erlang cookie
 ENV HOME $RABBITMQ_DATA_DIR
 # Hint that the data (a.k.a. home dir) dir should be separate volume
 VOLUME $RABBITMQ_DATA_DIR
