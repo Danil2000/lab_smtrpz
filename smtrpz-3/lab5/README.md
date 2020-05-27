@@ -5,7 +5,7 @@ docker compose
 
 ## Run project:
 ```
-cd lab4/config-server/configdir
+cd lab5/config-server/configdir
 git init
 git add -A
 git commit -m "..."
@@ -21,3 +21,4 @@ Service 2 URL: http://localhost:8082<br>
 Config Server URL: http://localhost:8888<br>
 Grafana URL: http://localhost:3000<br>
 Prometheus URL: http://localhost:9090<br>
+Consumer: http://localhost:8034<br>
