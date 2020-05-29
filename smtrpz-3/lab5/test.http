@@ -1,14 +1,12 @@
-
-POST http://localhost:8080/students
+POST http://localhost:8080/students?id=2&name=Dfan&email=noisyboy20000@gmail.com
 ###
-PUT http://localhost:8080/students/1
+PUT http://localhost:8080/students/?id=1&name=Danil&email=noisy20000@gmail.com
 ###
 GET http://localhost:8080/students
 ###
-GET http://localhost:8080/students/1
+GET http://localhost:8080/students?id=1
 ###
-DELETE http://localhost:8080/students/1
-
+DELETE http://localhost:8080/students?id=1
 ###
 
 

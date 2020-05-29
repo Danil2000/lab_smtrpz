@@ -52,14 +52,14 @@ services:
    depends_on:
      - eureka-client
 
- prometheus:
-   image: prom/prometheus
-   container_name: prometheus
-   volumes:
-     - ./prometheus.yml:/etc/prometheus/prometheus.yml
-   ports:
-   - "9090:9090"
-   - "9080:9080"
+# prometheus:
+#   image: prom/prometheus
+#   container_name: prometheus
+#   volumes:
+#     - ./prometheus.yml:/etc/prometheus/prometheus.yml
+#   ports:
+#   - "9090:9090"
+#   - "9080:9080"
 
  grafana:
    image: grafana/grafana

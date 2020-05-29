@@ -24,21 +24,6 @@ public class StudentController {
     @Value("${eureka.instance.instanceId}")
     private String instanceId;
 
-    @Value("${test.fifthtest}")
-    private String fifthteste;
-
-    @Value("${test.sixthtest}")
-    private String sixteste;
-
-    @GetMapping("/config")
-    public @ResponseBody
-    HashMap<String, String> getConfig() {
-        HashMap<String, String> configmap = new HashMap<String, String>();
-        configmap.put("fifth", fifthteste);
-        configmap.put("sixth", sixteste);
-        return configmap;
-    }
-
     @GetMapping("/")
     public String getInstanceId() {
         return instanceId;
