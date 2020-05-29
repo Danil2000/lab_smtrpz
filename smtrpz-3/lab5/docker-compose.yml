@@ -7,11 +7,11 @@ services:
    ports:
      - '8888:8888'
 
- rabbit:
-  image: "rabbitmq:3"
-  ports:
-    - "15672:15672"
-    - "5672:5672"
+# rabbit:
+#  image: "rabbitmq:3"
+#  ports:
+#    - "15672:15672"
+#    - "5672:5672"
 
  eureka-service:
    build:
@@ -61,10 +61,10 @@ services:
 #   - "9090:9090"
 #   - "9080:9080"
 
- grafana:
-   image: grafana/grafana
-   ports:
-   - "3000:3000"
+# grafana:
+#   image: grafana/grafana
+#   ports:
+#   - "3000:3000"
 
  zookeeper:
    image: wurstmeister/zookeeper
