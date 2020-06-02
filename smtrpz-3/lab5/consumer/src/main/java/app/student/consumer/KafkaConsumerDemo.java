@@ -6,7 +6,9 @@ import java.util.Arrays;
 import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.serialization.LongDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.springframework.kafka.annotation.EnableKafka;
 
+@EnableKafka
 public class KafkaConsumerDemo {
     private final static String TOPIC_CREATED = "create.entity";
     private final static String TOPIC_UPDATED = "update.entity";

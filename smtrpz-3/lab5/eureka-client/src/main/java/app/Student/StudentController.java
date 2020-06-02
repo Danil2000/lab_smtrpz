@@ -66,6 +66,10 @@ public class StudentController {
             student.setName(name);
             student.setEmail(email);
             studentRepository.save(student);
+            try {
+                KafkaProducerDemo.sendUpdateTopic((Student) student);
+            }catch (Exception e) {
+            }
             return ResponseEntity.ok("OK");
         }
         catch (Exception e) {
@@ -90,6 +94,10 @@ public class StudentController {
             student.setName(name);
             student.setEmail(email);
             studentRepository.save(student);
+            try {
+                KafkaProducerDemo.sendUpdateTopic((student));
+            }catch (Exception e) {
+            }
             return ResponseEntity.ok("OK");
         }
         catch (Exception e) {
