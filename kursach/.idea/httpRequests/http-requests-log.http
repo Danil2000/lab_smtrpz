@@ -1,0 +1,38 @@
+POST http://localhost:8080/users?id=1&name=Alex&surname=Piskun&email=ezyyk77@gmail.com&gender=male&country=Ukraine
+
+<> 2020-06-02T082527.404.json
+
+###
+
+GET http://localhost:8080/booking/1
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbm5hQGdtYWlsLmNvbSIsImF1dGgiOiJST0xFX0NMSUVOVCIsImlhdCI6MTU4OTkwNTQ3MCwiZXhwIjoxNTg5OTA5MDcwfQ.0knCsP3eKG4d3N15PBNWebCi8xEPPuEADrO-ubjQDuo
+
+<> 2020-06-02T082456.500.json
+
+###
+
+GET http://localhost:8081/train
+
+<> 2020-05-29T064632.200.txt
+
+###
+
+GET http://localhost:8081/trains
+
+<> 2020-05-29T064626.200.txt
+
+###
+
+GET http://localhost:8080/trains
+
+<> 2020-05-29T064607.404.json
+
+###
+
+GET http://localhost:8080/train
+
+<> 2020-05-29T064548.404.json
+
+###
+

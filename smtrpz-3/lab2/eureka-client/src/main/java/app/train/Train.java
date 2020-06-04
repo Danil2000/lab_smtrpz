@@ -1,4 +1,4 @@
-package app.booking;
+package app.train;
 
 import lombok.Data;
 
@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "train")
 @Data
 public class Train {
     @Id

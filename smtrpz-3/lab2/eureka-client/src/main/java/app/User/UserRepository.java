@@ -1,6 +1,6 @@
-package app.Student;
+package app.User;
 import org.springframework.data.repository.CrudRepository;
 
 
-public interface StudentRepository extends CrudRepository<Student, Integer> {
+public interface UserRepository extends CrudRepository<User, Integer> {
 }

@@ -1,4 +1,4 @@
-package app.Student;
+package app.User;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,9 +12,9 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping
-public class StudentController {
+public class UserController {
     @Autowired
-    StudentRepository studentRepository;
+    UserRepository userRepository;
 
     @Value("${eureka.instance.instanceId}")
     private String instanceId;
@@ -25,18 +25,18 @@ public class StudentController {
     }
 
     // read
-    @GetMapping("/students")
-    public String getStudentById(@RequestParam(value = "id", required = false) Integer id) {
+    @GetMapping("/users")
+    public String getUserById(@RequestParam(value = "id", required = false) Integer id) {
 
-        List<Student> resultList = new ArrayList<>();
+        List<User> resultList = new ArrayList<>();
         if (id == null) {
-            Iterable<Student> result = studentRepository.findAll();
+            Iterable<User> result = userRepository.findAll();
             result.forEach(resultList::add);
         }
         else {
-            Optional<Student> student = studentRepository.findById(id);
-            if (student.isPresent()) {
-                resultList.add(student.get());
+            Optional<User> user = userRepository.findById(id);
+            if (user.isPresent()) {
+                resultList.add(user.get());
             }
         }
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -45,52 +45,60 @@ public class StudentController {
     }
 
     // create
-    @PostMapping("/students")
-    public Boolean addStudent(@RequestBody
+    @PostMapping("/users")
+    public Boolean addUser(@RequestBody
                               @RequestParam(value = "id", required = true) Integer id,
                               @RequestParam(value = "name", required = true) String name,
-                              @RequestParam(value = "email", required = true) String email) {
-        Optional<Student> test = studentRepository.findById(id);
+                              @RequestParam(value = "surname", required = true) String surname,
+                              @RequestParam(value = "email", required = true) String email,
+                              @RequestParam(value = "bank_id", required = true) Integer bank_id) {
+        Optional<User> test = userRepository.findById(id);
         if (test.isPresent()) {
             return false;
         }
-        Student student = new Student();
-        student.setId(id);
-        student.setName(name);
-        student.setEmail(email);
-        studentRepository.save(student);
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setEmail(email);
+        user.setSurname(surname);
+        user.setBank_id(bank_id);
+        userRepository.save(user);
 
         return true;
     }
 
     // update
-    @PutMapping("/students")
-    public Boolean updatestudent(@RequestBody
+    @PutMapping("/users")
+    public Boolean updateUser(@RequestBody
                                  @RequestParam(value = "id", required = true) Integer id,
                                  @RequestParam(value = "name", required = true) String name,
-                                 @RequestParam(value = "email", required = true) String email) {
-        Optional<Student> test = studentRepository.findById(id);
+                                 @RequestParam(value = "surname", required = true) String surname,
+                                 @RequestParam(value = "email", required = true) String email,
+                                 @RequestParam(value = "bank_id", required = true) Integer bank_id) {
+        Optional<User> test = userRepository.findById(id);
         if (!test.isPresent()) {
             return false;
         }
-        Student student = new Student();
-        student.setId(id);
-        student.setName(name);
-        student.setEmail(email);
-        studentRepository.save(student);
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setSurname(surname);
+        user.setBank_id(bank_id);
+        user.setEmail(email);
+        userRepository.save(user);
 
         return true;
     }
 
     // delete
-    @DeleteMapping("/students")
-    public Boolean deleteStudent(@RequestBody
+    @DeleteMapping("/users")
+    public Boolean deleteUser(@RequestBody
                                  @RequestParam(value = "id", required = true) Integer id) {
-        Optional<Student> test = studentRepository.findById(id);
+        Optional<User> test = userRepository.findById(id);
         if (!test.isPresent()) {
             return false;
         }
-        studentRepository.deleteById(id);
+        userRepository.deleteById(id);
         return true;
     }
 }

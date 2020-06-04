@@ -1,42 +1,35 @@
 package app;
 
-import app.Student.StudentClient;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import app.User.UserClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @SpringBootApplication
 @EnableFeignClients
 @RestController
 @EnableAutoConfiguration
-public class FeignStudentApplication {
+public class FeignUserApplication {
     @Autowired
-    StudentClient studentClient;
+    UserClient userClient;
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignStudentApplication.class, args);
+        SpringApplication.run(FeignUserApplication.class, args);
     }
 
     @GetMapping("/")
     public String getInstanceId() {
-        return studentClient.getInstanceId();
+        return userClient.getInstanceId();
     }
 
     // read
     @GetMapping("/students")
     public String getStudentById(@RequestParam(value = "id", required = false) Integer id) {
-        System.out.println("Response from service: " + studentClient.getInstanceId());
-        return studentClient.getStudentById(id);
+        System.out.println("Response from service: " + userClient.getInstanceId());
+        return userClient.getStudentById(id);
     }
 
     // create
@@ -45,7 +38,7 @@ public class FeignStudentApplication {
                               @RequestParam(value = "id", required = true) Integer id,
                               @RequestParam(value = "name", required = true) String name,
                               @RequestParam(value = "email", required = true) String email) {
-        return studentClient.addStudent(id, name, email);
+        return userClient.addStudent(id, name, email);
     }
 
     // update
@@ -54,14 +47,14 @@ public class FeignStudentApplication {
                                  @RequestParam(value = "id", required = true) Integer id,
                                  @RequestParam(value = "name", required = true) String name,
                                  @RequestParam(value = "email", required = true) String email) {
-        return studentClient.updateStudent(id, name, email);
+        return userClient.updateStudent(id, name, email);
     }
 
     // delete
     @DeleteMapping("/students")
     public Boolean deleteStudent(@RequestBody
                                  @RequestParam(value = "id", required = true) Integer id) {
-        return studentClient.deleteStudent(id);
+        return userClient.deleteStudent(id);
     }
 
 }

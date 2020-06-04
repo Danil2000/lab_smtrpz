@@ -1,4 +1,4 @@
-package app.booking;
+package app.train;
 import org.springframework.data.repository.CrudRepository;
 
 

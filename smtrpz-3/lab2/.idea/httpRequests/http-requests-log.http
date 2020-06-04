@@ -1,3 +1,7 @@
+POST http://localhost:8080/users?id=1&name=Dan&surname=Yan&email=noisyboy20000@gmail.com&bank_id=45
+
+###
+
 GET http://localhost:8081
 
 <> 2020-05-03T105518.200.txt

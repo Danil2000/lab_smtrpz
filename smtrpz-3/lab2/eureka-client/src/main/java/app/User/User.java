@@ -1,4 +1,4 @@
-package app.Student;
+package app.User;
 
 import lombok.Data;
 
@@ -7,13 +7,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "student")
+@Table(name = "user")
 @Data
-public class Student {
+public class User {
     @Id
     private Integer id;
     private String name;
+    private String surname;
     private String email;
+    private Integer bank_id;
 
     public Integer getId() {
         return id;
@@ -30,6 +32,10 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+    public String getsurname()  {
+        return surname;
+    }
+    public void setSurname() { this.surname = surname; }
 
     public String getEmail() {
         return email;
@@ -38,4 +44,11 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
+    public Integer getBank_id()  {
+        return bank_id;
+    }
+    public void setBank_id(Integer bank_id) {
+        this.bank_id = bank_id;
+    }
+
 }

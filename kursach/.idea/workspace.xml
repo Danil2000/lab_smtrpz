@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="310590da-119f-42a3-9b8f-3965923e70b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/Feedback/Feedback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/Feedback/FeedbackClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/Feedback/FeedbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/booking/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/booking/BookingClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/booking/BookingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/train/Train.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/train/TrainClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/train/TrainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/AuthorizationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/ExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/User/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/User/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/User/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/User/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/auth/GetDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/java/com/app/authentification/auth/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/authorization/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/apigateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/apigateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/app/FeignClientApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/app/User/UserClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/META-INF/apigateway.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/classes/META-INF/apigateway.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/app/FeignClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/classes/app/FeignClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/app/User/UserClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/classes/app/User/UserClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/back/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/eurekaclient.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back/authorization/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/app/EurekaСlientApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/app/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/eureka-client/src/main/java/app/Student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/app/User/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/user/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/app/User/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/eureka-client/src/main/java/app/Student/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/classes/META-INF/eurekaclient.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/classes/app/EurekaСlientApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/classes/app/User/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/classes/app/User/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/classes/app/User/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/authorization/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/eureka-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/eureka-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/java/app/ServiceRegistrationAndDiscoveryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/src/main/java/app/ServiceRegistrationAndDiscoveryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/target/classes/META-INF/eureka-service.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/target/classes/META-INF/eureka-service.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/target/classes/app/ServiceRegistrationAndDiscoveryServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/target/classes/app/ServiceRegistrationAndDiscoveryServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/back/eureka-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kusrsach.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/api-gateway/src/main/java/app/ConfigClientAppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/api-gateway/src/main/java/app/ConfigClientAppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/api-gateway/src/main/java/app/FeignClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/api-gateway/src/main/java/app/FeignClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/api-gateway/src/main/java/app/User/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/api-gateway/src/main/java/app/Student/StudentClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/api-gateway/target/classes/app/ConfigClientAppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/api-gateway/target/classes/app/ConfigClientAppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/api-gateway/target/classes/app/FeignClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/api-gateway/target/classes/app/FeignClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/api-gateway/target/classes/app/User/UserClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/config-server/target/classes/app/ConfigServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/config-server/target/classes/app/ConfigServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/eureka-client/src/main/java/app/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/api-gateway/src/main/java/app/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/eureka-client/src/main/java/app/User/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/eureka-client/src/main/java/app/Student/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/eureka-client/src/main/java/app/User/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/eureka-client/target/classes/app/EurekaСlientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/eureka-client/target/classes/app/EurekaСlientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/eureka-service/eureka-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/eureka-service/target/classes/app/ServiceRegistrationAndDiscoveryServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/eureka-service/target/classes/app/ServiceRegistrationAndDiscoveryServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/lab3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4/eureka-service/eureka-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/eureka-service/eureka-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4/lab4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/lab4.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1caUPmjvuGYrTTcE4aoBXK9MJ06" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/back/api-gateway/src/main/java/app" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/front/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/back" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.User" />
+      <recent name="app.train" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/back/api-gateway/src/main/java/app" />
+      <recent name="$PROJECT_DIR$/front" />
+      <recent name="$PROJECT_DIR$/eureka-client/src/main/java/app" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/users" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="Alex" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="surname" />
+                <option name="value" value="Piskun" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="ezyyk77@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="gender" />
+                <option name="value" value="male" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="country" />
+                <option name="value" value="Ukraine" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/booking/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbm5hQGdtYWlsLmNvbSIsImF1dGgiOiJST0xFX0NMSUVOVCIsImlhdCI6MTU4OTkwNTQ3MCwiZXhwIjoxNTg5OTA5MDcwfQ.0knCsP3eKG4d3N15PBNWebCi8xEPPuEADrO-ubjQDuo" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081/train" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081/trains" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/trains" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/train" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.test#1">
+    <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthentificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="authorization" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.authentification.AuthorizationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaСlientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.EurekaСlientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegistrationAndDiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.ServiceRegistrationAndDiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.test#1" />
+        <item itemvalue="HTTP Request.test#6" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="310590da-119f-42a3-9b8f-3965923e70b1" name="Default Changelist" comment="" />
+      <created>1590766175983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590766175983</updated>
+      <workItem from="1590766181158" duration="53564000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1574" y="217" key="#com.intellij.ide.util.MemberChooser" timestamp="1591139747228">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="1574" y="217" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1338@0.23.2560.1338" timestamp="1591139747228" />
+    <state x="1344" y="455" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591108649143">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state x="1344" y="455" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.2560.1335@0.23.2560.1335" timestamp="1591108649143" />
+    <state x="1378" y="666" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590768403952">
+      <screen x="0" y="23" width="2560" height="1330" />
+    </state>
+    <state x="1378" y="666" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.2560.1330@0.23.2560.1330" timestamp="1590768403952" />
+    <state x="1311" y="410" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1591108642585">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state x="1311" y="410" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.2560.1335@0.23.2560.1335" timestamp="1591108642585" />
+    <state x="1283" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591108874014">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state x="1283" y="277" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1335@0.23.2560.1335" timestamp="1591108874014" />
+    <state width="1556" height="255" key="GridCell.Tab.0.bottom" timestamp="1591130780926">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1556" height="271" key="GridCell.Tab.0.bottom/0.23.2560.1330@0.23.2560.1330" timestamp="1590944504346" />
+    <state width="1556" height="255" key="GridCell.Tab.0.bottom/0.23.2560.1335@0.23.2560.1335" timestamp="1591118727570" />
+    <state width="1556" height="255" key="GridCell.Tab.0.bottom/0.23.2560.1338@0.23.2560.1338" timestamp="1591130780926" />
+    <state width="1556" height="255" key="GridCell.Tab.0.center" timestamp="1591130780926">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1556" height="271" key="GridCell.Tab.0.center/0.23.2560.1330@0.23.2560.1330" timestamp="1590944504345" />
+    <state width="1556" height="255" key="GridCell.Tab.0.center/0.23.2560.1335@0.23.2560.1335" timestamp="1591118727570" />
+    <state width="1556" height="255" key="GridCell.Tab.0.center/0.23.2560.1338@0.23.2560.1338" timestamp="1591130780926" />
+    <state width="1556" height="255" key="GridCell.Tab.0.left" timestamp="1591130780925">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1556" height="271" key="GridCell.Tab.0.left/0.23.2560.1330@0.23.2560.1330" timestamp="1590944504345" />
+    <state width="1556" height="255" key="GridCell.Tab.0.left/0.23.2560.1335@0.23.2560.1335" timestamp="1591118727569" />
+    <state width="1556" height="255" key="GridCell.Tab.0.left/0.23.2560.1338@0.23.2560.1338" timestamp="1591130780925" />
+    <state width="1556" height="255" key="GridCell.Tab.0.right" timestamp="1591130780926">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state width="1556" height="271" key="GridCell.Tab.0.right/0.23.2560.1330@0.23.2560.1330" timestamp="1590944504345" />
+    <state width="1556" height="255" key="GridCell.Tab.0.right/0.23.2560.1335@0.23.2560.1335" timestamp="1591118727570" />
+    <state width="1556" height="255" key="GridCell.Tab.0.right/0.23.2560.1338@0.23.2560.1338" timestamp="1591130780926" />
+    <state x="810" y="519" key="Maven.ArtifactSearchDialog" timestamp="1591109473110">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state x="810" y="519" key="Maven.ArtifactSearchDialog/0.23.2560.1335@0.23.2560.1335" timestamp="1591109473110" />
+    <state x="224" y="565" width="1246" height="561" key="new project wizard" timestamp="1591132810733">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="1314" y="226" key="new project wizard/0.23.2560.1330@0.23.2560.1330" timestamp="1590943430611" />
+    <state x="1314" y="227" key="new project wizard/0.23.2560.1335@0.23.2560.1335" timestamp="1591107995952" />
+    <state x="224" y="565" width="1246" height="561" key="new project wizard/0.23.2560.1338@0.23.2560.1338" timestamp="1591132810733" />
+    <state x="1323" y="425" key="refactoring.ChangeSignatureDialog" timestamp="1590833549968">
+      <screen x="0" y="23" width="2560" height="1330" />
+    </state>
+    <state x="1323" y="425" key="refactoring.ChangeSignatureDialog/0.23.2560.1330@0.23.2560.1330" timestamp="1590833549968" />
+    <state x="1282" y="526" width="670" height="681" key="search.everywhere.popup" timestamp="1591141288274">
+      <screen x="0" y="23" width="2560" height="1338" />
+    </state>
+    <state x="1282" y="523" width="670" height="676" key="search.everywhere.popup/0.23.2560.1330@0.23.2560.1330" timestamp="1590834288408" />
+    <state x="1282" y="526" width="670" height="681" key="search.everywhere.popup/0.23.2560.1338@0.23.2560.1338" timestamp="1591141288274" />
+  </component>
+</project>

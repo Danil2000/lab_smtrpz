@@ -1,4 +1,4 @@
-package app.booking;
+package app.train;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -19,7 +19,7 @@ public class TrainController {
     @Value("${eureka.instance.instanceId}")
     private String instanceId;
 
-    @GetMapping("/")
+    @GetMapping("/train/id")
     public String getInstanceId() {
         return instanceId;
     }

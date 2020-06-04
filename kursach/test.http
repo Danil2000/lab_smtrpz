@@ -1,0 +1,20 @@
+### To check that api-gateway works correctly, make GET request to http://localhost:8081/
+### or check api-gateway console. There you will find instance ID of responded service.
+
+### Create entity
+POST http://localhost:8080/users?id=1&name=Alex&surname=Piskun&email=ezyyk77@gmail.com&gender=male&country=Ukraine
+
+### Update entity
+PUT http://localhost:8080/users?id=1&name=Serg&surname=Piskun&email=another_email&gender=male&country=Ukraine
+
+### Fetch entities
+GET http://localhost:8080/users
+
+### Fetch entity
+GET http://localhost:8080/users?id=1
+
+### Delete entity
+DELETE http://localhost:8080/entity?id=1
+###
+
+###

@@ -1,0 +1,52 @@
+version: '3.7'
+services:
+  mysql:
+    hostname: mysql
+    image: mysql:5.7
+    restart: always
+    logging:
+      driver: none
+    environment:
+      MYSQL_DATABASE: 'tourism'
+      MYSQL_USER: 'admin'
+      MYSQL_PASSWORD: 'P@ssw0rd'
+      MYSQL_ROOT_PASSWORD: 'P@ssw0rd'
+    ports:
+      - '3306:3306'
+
+  eureka-service:
+    hostname: eureka-service
+    build:
+      context: eureka-service
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    depends_on:
+      - mysql
+
+  authorization:
+    hostname: authorization
+    environment:
+      - PORT=8085
+      - EUREKA_SERVER=http://eurekaserver:8761/eureka
+      - MYSQL=mysql:3306
+    build:
+      context: authorization
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+    depends_on:
+      - eureka-service
+
+  apigateway:
+    hostname: apigateway
+    environment:
+      - PORT=8080
+      - EUREKA_SERVER=http://eurekaserver:8761/eureka
+    build:
+      context: api-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-service

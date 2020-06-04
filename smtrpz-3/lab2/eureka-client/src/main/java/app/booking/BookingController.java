@@ -12,29 +12,29 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping
-public class TrainController {
+public class BookingController {
     @Autowired
-    TrainRepository trainRepository;
+    BookingRepository bookingRepository;
 
     @Value("${eureka.instance.instanceId}")
     private String instanceId;
 
-    @GetMapping("/")
+    @GetMapping("/booking/id")
     public String getInstanceId() {
         return instanceId;
     }
 
     // read
-    @GetMapping("/trains")
-    public String getTrainById(@RequestParam(value = "id", required = false) Integer id) {
+    @GetMapping("/bookings")
+    public String getBookingById(@RequestParam(value = "id", required = false) Integer id) {
 
-        List<Train> resultList = new ArrayList<>();
+        List<Booking> resultList = new ArrayList<>();
         if (id == null) {
-            Iterable<Train> result = trainRepository.findAll();
+            Iterable<Booking> result = bookingRepository.findAll();
             result.forEach(resultList::add);
         }
         else {
-            Optional<Train> user = trainRepository.findById(id);
+            Optional<Booking> user = bookingRepository.findById(id);
             if (user.isPresent()) {
                 resultList.add(user.get());
             }
@@ -45,52 +45,55 @@ public class TrainController {
     }
 
     // create
-    @PostMapping("/trains")
-    public Boolean addTrain(@RequestBody
+    @PostMapping("/bookings")
+    public Boolean addBooking(@RequestBody
                               @RequestParam(value = "id", required = true) Integer id,
-                              @RequestParam(value = "number", required = true) Integer number,
-                              @RequestParam(value = "destination", required = true) String destination) {
-        Optional<Train> test = trainRepository.findById(id);
+                              @RequestParam(value = "customer", required = true) String customer,
+                              @RequestParam(value = "train", required = true) Integer train,
+                              @RequestParam(value = "price", required = true) Integer price) {
+        Optional<Booking> test = bookingRepository.findById(id);
         if (test.isPresent()) {
             return false;
         }
-        Train train = new Train();
-        train.setId(id);
-        train.setNumber(number);
-        train.setDestination(destination);
-        trainRepository.save(train);
-
+        Booking booking = new Booking();
+        booking.setId(id);
+        booking.setCustomer(customer);
+        booking.setTrain(train);
+        booking.setPrice(price);
+        bookingRepository.save(booking);
         return true;
     }
 
     // update
-    @PutMapping("/trains")
-    public Boolean updateTrain(@RequestBody
+    @PutMapping("/bookings")
+    public Boolean updateBooking(@RequestBody
                                    @RequestParam(value = "id", required = true) Integer id,
-                               @RequestParam(value = "number", required = true) Integer number,
-                               @RequestParam(value = "destination", required = true) String destination) {
-        Optional<Train> test = trainRepository.findById(id);
+                               @RequestParam(value = "customer", required = true) String customer,
+                               @RequestParam(value = "train", required = true) Integer train,
+                               @RequestParam(value = "price", required = true) Integer price) {
+        Optional<Booking> test = bookingRepository.findById(id);
         if (!test.isPresent()) {
             return false;
         }
-        Train train = new Train();
-        train.setId(id);
-        train.setNumber(number);
-        train.setDestination(destination);
-        trainRepository.save(train);
+        Booking booking = new Booking();
+        booking.setId(id);
+        booking.setCustomer(customer);
+        booking.setTrain(train);
+        booking.setPrice(price);
+        bookingRepository.save(booking);
 
         return true;
     }
 
     // delete
-    @DeleteMapping("/trains")
-    public Boolean deleteTrain(@RequestBody
+    @DeleteMapping("/bookings")
+    public Boolean deleteBooking(@RequestBody
                                  @RequestParam(value = "id", required = true) Integer id) {
-        Optional<Train> test = trainRepository.findById(id);
+        Optional<Booking> test = bookingRepository.findById(id);
         if (!test.isPresent()) {
             return false;
         }
-        trainRepository.deleteById(id);
+        bookingRepository.deleteById(id);
         return true;
     }
 }

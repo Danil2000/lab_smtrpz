@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/back/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/back/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back/authorization/authorization.iml" filepath="$PROJECT_DIR$/back/authorization/authorization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/back/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/back/eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kusrsach.iml" filepath="$PROJECT_DIR$/kusrsach.iml" />
+    </modules>
+  </component>
+</project>

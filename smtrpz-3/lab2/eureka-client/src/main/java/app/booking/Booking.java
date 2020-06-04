@@ -7,13 +7,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "booking")
 @Data
-public class Train {
+public class Booking {
     @Id
     private Integer id;
-    private Integer number;
-    private String destination;
+    private String  customer;
+    private Integer train;
+    private Integer price;
 
     public Integer getId() {
         return id;
@@ -23,16 +24,21 @@ public class Train {
         this.id = id;
     }
 
-    public Integer getNumber() {
-        return number;
+    public Integer getTrain() {
+        return train;
     }
-    public void setNumber(Integer number) {
-        this.number = number;
+    public void setTrain(Integer train) {
+        this.train = train;
     }
 
-    public String getDestination()  {
-        return destination;
+    public String getCustomer()  {
+        return customer;
     }
-    public void setDestination(String destination) { this.destination = destination;}
-
+    public void setCustomer(String customer) { this.customer = customer;}
+    public Integer getPrice() {
+        return price;
+    }
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
 }

@@ -1,10 +1,10 @@
-package app.Student;
+package app.User;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 @FeignClient(value = "eureka-client")
-public interface StudentClient {
+public interface UserClient {
 
     @GetMapping("/")
     String getInstanceId();
